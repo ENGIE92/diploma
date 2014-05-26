@@ -1,0 +1,47 @@
+/**
+ * Frontend style
+ *
+ * @author Your Inspiration Themes
+ * @package YITH WooCommerce Ajax Search
+ * @version 1.1.1
+ */
+
+/* search autocomplete */
+.autocomplete-suggestions {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.autocomplete-suggestion {
+    background: #fff;
+    padding-left: 15px;
+    cursor: pointer;
+    text-align: left;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+.autocomplete-suggestion:hover {
+    background-color: #000000;
+}
+input#yith-s{
+    border-radius: 0px;
+    width: 178px;
+    height: 22px;
+    border-color: #FFCAC5;
+    border-style:solid;
+    font-family: GENISO;
+    font-size: 18px;
+
+}
+input#yith-searchsubmit{
+    position: absolute;
+    left: 140%;
+    top: 0%;
+}
+@-moz-document url-prefix() {
+   input#yith-searchsubmit {
+        left: 95%;
+    }
+}
