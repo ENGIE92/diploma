@@ -14,7 +14,7 @@
     border: 1px solid #ccc;
 }
 .autocomplete-suggestion {
-    background: #fff;
+    background: #;
     padding-left: 15px;
     cursor: pointer;
     text-align: left;
@@ -23,7 +23,7 @@
 }
 
 .autocomplete-suggestion:hover {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 input#yith-s{
     border-radius: 0px;
@@ -37,11 +37,8 @@ input#yith-s{
 }
 input#yith-searchsubmit{
     position: absolute;
-    left: 140%;
-    top: 0%;
+    top:23px;
 }
-@-moz-document url-prefix() {
-   input#yith-searchsubmit {
-        left: 95%;
-    }
+textarea:focus, input:focus{
+    outline: 0;
 }

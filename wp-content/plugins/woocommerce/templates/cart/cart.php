@@ -1,4 +1,4 @@
-<?php
+<p class="basket"> Корзина </p><?php
 /**
  * Cart Page
  *
@@ -15,21 +15,13 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 
+
 <form action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" method="post">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
 
 <table class="shop_table cart" cellspacing="0">
-	<thead>
-		<tr>
-			<th class="product-remove">&nbsp;</th>
-			<th class="product-thumbnail">&nbsp;</th>
-			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
-			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
-		</tr>
-	</thead>
+	
 	<tbody>
 		<?php do_action( 'woocommerce_before_cart_contents' ); ?>
 
@@ -75,11 +67,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 					</td>
 
-					<td class="product-price">
-						<?php
-							echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
-						?>
-					</td>
+					
 
 					<td class="product-quantity">
 						<?php
@@ -138,7 +126,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 <?php do_action( 'woocommerce_after_cart_table' ); ?>
 
 </form>
-
+<a class="back_store" href="http://diploma/"> Вернуться в магазин </a>
 <div class="cart-collaterals">
 
 	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
@@ -147,6 +135,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 	<?php woocommerce_shipping_calculator(); ?>
 
+
 </div>
 
+
 <?php do_action( 'woocommerce_after_cart' ); ?>
+
+

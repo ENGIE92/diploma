@@ -66,6 +66,9 @@ ob_start();
 	<?php endforeach; ?>
 	
 </table>
+<p class="friends"> Понравилось? Расскажи друзьям! </p>
+ <div class="share42init" data-url="<?php the_permalink() ?>" data-title="<?php the_title() ?>"></div>
+<script type="text/javascript" src="http://diploma/wp-includes/js/share42/share42.js"></script> 
 <?php
 if ( $has_row ) {
 	echo ob_get_clean();

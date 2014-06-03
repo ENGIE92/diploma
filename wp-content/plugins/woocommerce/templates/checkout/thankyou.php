@@ -1,3 +1,4 @@
+<img class="fir" src="http://diploma/img/second.png"/>
 <?php
 /**
  * Thankyou page
@@ -33,7 +34,7 @@ if ( $order ) : ?>
 
 	<?php else : ?>
 
-		<p><?php _e( 'Thank you. Your order has been received.', 'woocommerce' ); ?></p>
+		<p class="thanks"><?php _e( 'Thank you. Your order has been received.', 'woocommerce' ); ?></p>
 
 		<ul class="order_details">
 			<li class="order">

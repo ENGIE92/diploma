@@ -31,7 +31,7 @@
 <div class="social"><ul class="soc">
 <li class="vk"><a href="http://vk.com/muffin_handmade"></a></li> <li class="face"><a href="https://www.facebook.com/handmademuffin"></a></li> <li class="tweet"><a href="https://twitter.com/muffin_handmade"></a></li> <li class="inst"><a href="http://instagram.com/muffin_handmade#"></a></li></ul>  </div>
 <div id="header"><a class="title" href="<?php echo esc_url( home_url() ); ?>"><img id="title" src="img/logo.png"></img></a></div>
-<a class="who" href="http://localhost:8888/wordpress_diplom/?page_id=228"> Кто мы? </a>
+<a class="who" href="http://diploma/?page_id=228"> Кто мы? </a>
 	<div id="nav-container">
 	<div id="nav"><div class="menu">
 	<?php wp_nav_menu( array('theme_location' => 'header-nav', 'depth' => 0, 'menu_class' => 'nav' )); ?>

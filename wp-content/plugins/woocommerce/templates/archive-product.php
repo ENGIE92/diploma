@@ -29,7 +29,7 @@ get_header( 'shop' ); ?>
 
 		<?php endif; ?>
 
-		<?php do_action( 'woocommerce_archive_description' ); ?>
+	
 
 		<?php if ( have_posts() ) : ?>
 

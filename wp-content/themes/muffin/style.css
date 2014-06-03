@@ -3,6 +3,20 @@ Theme Name: Muffin
 Author: Olga
 Version: 1.0
 */
+@font-face {
+    font-family: GENISO; /* Имя шрифта */
+    src: url(http://diploma/wp-content/themes/muffin/fonts/GENISO.ttf); /* Путь к файлу со шрифтом */
+   }
+/*Рубль*/
+.rur{
+	font-family: Arial Narrow;
+	color: #736098;
+	font-size: 45px;
+}
+.products .price .rur{
+	font-size: 30px;
+}
+/*eof Рубль */
 .woocommerce ul.products li.product a img, .woocommerce-page ul.products li.product{
 	margin-top: 2px;
 	padding: 0;
@@ -335,7 +349,6 @@ a {
 	font-family: 'Open sans', sans-serif;
 	background-size: 198px;
 	background-repeat: no-repeat;
-	margin-top: 3%;
 		position: relative;
 }
 
@@ -372,25 +385,84 @@ img.header {
 	word-break: break-word;
 	line-height: 34px;
 	color:#5f5f5f;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Arial Narrow;
 }
 
-#border-bottom {
+/*#border-bottom {
 	background-color: #eee;
 	height:1px;
 	margin:0 0 80px 0;
 	width:100%;
-}
+}*/
 
 h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: GENISO;
 	font-weight: 100;
 	font-size: 40px;
-	color:#0092e0;
+	color:#000000;
 	text-align: center;
 	line-height: 52px;
 }
-
+h2{
+	font-family: GENISO;
+	color: #736098;
+}
+.comment-reply-title{
+	color: #736098;
+}
+#comment{
+	margin-left: 2%;
+}
+.comment-form-author, .comment-form-email, .comment-form-rating{
+	font-family: GENISO;
+}
+.reviews_tab{
+	font-family: GENISO;
+	color: #736098;
+	border-color: #736098;
+}
+.shop_attributes, .posted_in{
+	font-family: GENISO;
+	font-size: 18px;
+}
+.shop_attributes{
+	position: absolute;
+	top: 17%;
+	left: 40%;
+	border-bottom: #736098 solid 1px;
+	padding-bottom: 1%;
+	width: 34%;
+	text-align: left;
+}
+.woocommerce-product-rating{
+	display: none;
+}
+#reviews{
+	font-family: Arial Narrow;
+}
+.posted_in{
+position: absolute;
+top: 115%;
+left:0%;
+}
+.good_description{
+	font-family: GENISO;
+	font-size: 18px;
+	position: absolute;
+top: 85%;
+left:0%;
+border-top: #736098 solid 1px;
+width: 100%;
+}
+form.cart{
+	padding-bottom: 5%;
+	margin-top: -25%;
+margin-left: 30%;
+}
+.product_meta{
+	margin: 0;
+	padding: 0;
+}
 /*--------- Social Options ---------------*/
 
 table.social {
@@ -428,7 +500,7 @@ table.social td.fb {
 	padding:0 20px 0 0px;
 }
 
-.date {
+/*.date {
 	text-transform: uppercase;
 	letter-spacing: .7em;
 	color: #b4b4b4;
@@ -436,7 +508,7 @@ table.social td.fb {
 	text-align: center;
 	margin:-15px 0 40px 0;
 	font-weight: 100;
-}
+}*/
 
 
 /* --------- Posts Link --------- */
@@ -556,11 +628,7 @@ table.links td.text {
 	margin:150px 0 0 0px;
 }
 
-.commentline {
-	height:1px;
-	margin:0px 0px 30px 0px;
-	background-color: #eeeeee;
-}
+
 
 .comment-name {
 	font-size:18px;
@@ -740,11 +808,9 @@ input.search-sidebar:focus {
 
 #sidebar-widget {
 	font-family: Helvetica;
-	margin:50px 0 0px 0px;
 	font-weight: 100;
 	color:#515151;
 	line-height: 27px;
-	position: absolute;
 }
 
 #sidebar-widget li, ul.blogroll li {
@@ -777,7 +843,9 @@ li#wpmenucartli .wpmenucartli .wpmenucart-display-left{
 }
 
 .yith-ajaxsearchform-container{
-	margin-left: 50%;
+	margin-top: 5%;
+	margin-left: 8%;
+
 }
 a.who{
 	font-family: GENISO;
@@ -785,13 +853,13 @@ a.who{
 	color:#736098;
 	font-weight: 900;
 	float: right;
-	margin-top: -2%;
+	margin-top: -6%;
 	margin-right: 18%;
 }
 div.social{
 	position: absolute;
 	left: 68%;
-	top: 7%;
+	top: 1%;
 }
 div.social_2{
 	margin-top: 1%;
@@ -944,6 +1012,262 @@ p.foot_text_2{
 	margin-right: 5%;
 }
 
-.single_add_to_cart_button {
-  background: url(../images/cart.png) no-repeat;
+
+.woocommerce-message{
+	font-family: GENISO;
+	font-size: 20px;
+}
+.added_to_cart{
+	display: none;
+}
+input.plus, input.minus{
+	background-color: #736098;
+	color: #ffffff;
+	width: 10%;
+}
+.attachment-shop_thumbnail{
+	border-radius: 0;
+}
+.attachment-shop_single{
+border-radius: 50%;
+}
+.shop_table .cart_item .product-thumbnail .attachment-shop_thumbnail{
+	border-radius: 50%;
+	width: 130px;
+}
+.friends{
+	font-family: GENISO;
+	font-size: 15px;
+	margin-bottom: 0;
+	position: absolute;
+	left: 46%;
+	top: 21%;
+}
+.share42init{
+	position: absolute;
+	left: 52%;
+	top: 24%;
+}
+.woocommerce p.stars,.woocommerce-page p.stars{position:relative;font-size:2.5em; color:#736098; }
+.woocommerce p.stars a,.woocommerce-page p.stars a{display:inline-block;font-weight:700;margin-right:0.2em;text-indent:-9999px;position:relative}
+.woocommerce p.stars a:last-child,.woocommerce-page p.stars a:last-child{border-right:0}
+.woocommerce p.stars a.star-1,.woocommerce p.stars a.star-2,.woocommerce p.stars a.star-3,.woocommerce p.stars a.star-4,.woocommerce p.stars a.star-5,.woocommerce-page p.stars a.star-1,.woocommerce-page p.stars a.star-2,.woocommerce-page p.stars a.star-3,.woocommerce-page p.stars a.star-4,.woocommerce-page p.stars a.star-5{border-right:1px solid #ccc}
+.woocommerce p.stars a.star-1:after,.woocommerce p.stars a.star-2:after,.woocommerce p.stars a.star-3:after,.woocommerce p.stars a.star-4:after,.woocommerce p.stars a.star-5:after,.woocommerce-page p.stars a.star-1:after,.woocommerce-page p.stars a.star-2:after,.woocommerce-page p.stars a.star-3:after,.woocommerce-page p.stars a.star-4:after,.woocommerce-page p.stars a.star-5:after{font-family:WooCommerce;text-indent:0;position:absolute;top:0;left:0;}
+.woocommerce p.stars a.star-1,.woocommerce-page p.stars a.star-1{width:1em}.woocommerce p.stars a.star-1:after,.woocommerce-page p.stars a.star-1:after{content:"\2605"; color:#CE9ED0;}
+.woocommerce p.stars a.star-1.active:after,.woocommerce p.stars a.star-1:hover:after,.woocommerce-page p.stars a.star-1.active:after,.woocommerce-page p.stars a.star-1:hover:after{content:"\2605"; color:#736098;}
+.woocommerce p.stars a.star-2,.woocommerce-page p.stars a.star-2{width:1.5em}.woocommerce p.stars a.star-2:after,.woocommerce-page p.stars a.star-2:after{content:"\2605\2605";color:#CE9ED0;}
+.woocommerce p.stars a.star-2.active:after,.woocommerce p.stars a.star-2:hover:after,.woocommerce-page p.stars a.star-2.active:after,.woocommerce-page p.stars a.star-2:hover:after{content:"\2605\2605"; color:#736098;}
+.woocommerce p.stars a.star-3,.woocommerce-page p.stars a.star-3{width:2em}.woocommerce p.stars a.star-3:after,.woocommerce-page p.stars a.star-3:after{content:"\2605\2605\2605";color:#CE9ED0;}
+.woocommerce p.stars a.star-3.active:after,.woocommerce p.stars a.star-3:hover:after,.woocommerce-page p.stars a.star-3.active:after,.woocommerce-page p.stars a.star-3:hover:after{content:"\2605\2605\2605";color:#736098;}
+.woocommerce p.stars a.star-4,.woocommerce-page p.stars a.star-4{width:2.5em}.woocommerce p.stars a.star-4:after,.woocommerce-page p.stars a.star-4:after{content:"\2605\2605\2605\2605";color:#CE9ED0;}
+.woocommerce p.stars a.star-4.active:after,.woocommerce p.stars a.star-4:hover:after,.woocommerce-page p.stars a.star-4.active:after,.woocommerce-page p.stars a.star-4:hover:after{content:"\2605\2605\2605\2605";color:#736098;}
+.woocommerce p.stars a.star-5,.woocommerce-page p.stars a.star-5{width:3em;border:0}.woocommerce p.stars a.star-5:after,.woocommerce-page p.stars a.star-5:after{content:"\2605\2605\2605\2605\2605";color:#CE9ED0;}
+.woocommerce p.stars a.star-5.active:after,.woocommerce p.stars a.star-5:hover:after,.woocommerce-page p.stars a.star-5.active:after,.woocommerce-page p.stars a.star-5:hover:after{content:"\2605\2605\2605\2605\2605";color:#736098;}
+
+.dostavka,.oplata{
+	list-style-type: decimal;
+	color: #000000;
+}
+.what{
+	margin-left: 50%;
+color: #000000;
+font-family: Arial Narrow;
+font-size: 20px;
+}
+.dostavka_type,.oplata_type{
+	font-size: 24px;
+	font-family:GENISO;
+	color: #736098;
+	font-weight:600;
+}
+.dostavka p{
+	color: #000000;
+font-family: Arial Narrow;
+font-size: 20px;
+}
+.dostavka li{
+	color: #000000;
+font-family: Arial Narrow;
+font-size: 20px;
+}
+.oplata{
+		color: #000000;
+font-family: Arial Narrow;
+font-size: 20px;
+}
+.basket{
+	font-size: 35px;
+	font-family:GENISO;
+	color: #FEAC98;
+	font-weight:600;
+	position: absolute;
+	left: 30%;
+	top: 85%;
+	padding-bottom: 1%;
+	width: 40%;
+	text-align: center;
+	border-bottom: #736098 1px solid;
+}
+.article{
+	margin-top: 8%;
+	margin-left: 21%;
+
+}
+.product-name a{
+font-size: 24px;
+	font-family:GENISO;
+	color: #000000;
+	font-weight:600;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+.product-subtotal .amount{
+		font-size: 35px;
+		font-family: Arial Narrow;
+		font-weight: 600;
+}
+.back_store{
+	font-family: GENISO;
+color: #736098;
+font-size: 30px;
+font-weight: 600;
+float: left;
+margin-top: 10%;
+}
+.cart_totals {
+	margin-top: 7%;
+}
+.cart-subtotal .amount, .shipping .amount, .order-total .amount{
+	font-size: 35px;
+	font-family:Arial Narrow;
+	font-weight: 600;
+	color: #5f5f5f;
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+	font-family: Arial Narrow;
+	font-size: 20px;
+width: 45%;}
+	#shipping_method{
+		list-style: none;
+	}
+	.cart-subtotal th, .shipping th, .order-total th{
+		font-family: GENISO;
+		color: #736098;
+	}
+
+	.woocommerce .woocommerce-error:after, .woocommerce .woocommerce-info:after, .woocommerce .woocommerce-message:after, .woocommerce-page .woocommerce-error:after, .woocommerce-page .woocommerce-info:after, .woocommerce-page .woocommerce-message:after {
+		display: none;
+	}
+
+	.woocommerce-billing-fields h3,h3#ship-to-different-address,h3#order_review_heading{
+		font-family: GENISO;
+		color: #736098;
+		font-size: 22px;
+	}
+	p#billing_country_field, #order_comments_field, p#billing_first_name_field, p#billing_last_name_field, p#billing_address_1_field, p#billing_state_field, p#billing_postcode_field, p#billing_email_field,p#billing_phone_field{
+		font-family: Arial Narrow;
+		font-size: 18px;
+		color: #000000;
+	}
+	.woocommerce form .form-row label, .woocommerce-page form .form-row label {
+		width: 120%;
+	}
+	.product-name, .product-total{
+		font-family: Arial Narrow;
+		font-size: 18px;
+		color: #000000;	
+	}
+	div#order_review .cart_item .product-total .amount .rur,div#order_review .shop_table .cart-subtotal .amount .rur{
+		font-size: 30px;
+	}
+	div#order_review .shop_table .cart_item .product-total .amount{
+		font-family: Arial Narrow;
+		font-size: 25px;
+		color: #5F5F5F;
+		font-weight: 600;	
+	}
+	div#order_review .shop_table .cart-subtotal .amount{
+			font-family: Arial Narrow;
+		font-size: 25px;
+		color: #5F5F5F;
+		font-weight: 600;	
+	}
+	div#order_review .shop_table .cart-subtotal th, div#order_review .shop_table .shipping th, div#order_review .shop_table .order-total th{
+			font-family: GENISO;
+		color: #736098;
+		font-size: 20px;
+	}
+	div#order_review .shop_table .shipping #shipping_method .amount .rur{
+		font-size: 30px;
+	}
+		div#order_review .shop_table .shipping #shipping_method .amount{
+				font-family: Arial Narrow;
+		font-size: 25px;
+		color: #5F5F5F;
+		font-weight: 600;
+		}
+		.payment_method_cod,.payment_method_paypal,#shipping_method li {
+			font-family: Arial Narrow;
+		font-size: 18px;
+		color: #000000;	
+
+		}
+		#payment ul{
+			list-style: none;
+		}
+		.payment_method_paypal label img{
+			width: 40px;
+		}
+		.thanks{
+			font-family: GENISO;
+		color: #736098;
+		font-size: 21px;
+		font-weight: 600;
+		width: 120%;
+		margin-left: -10%;	
+		}
+		.order_details{
+			list-style: none;
+		}
+		.order_details li{
+			font-family: Arial Narrow;
+		font-size: 18px;
+		color: #000000;	
+		}
+.order_details .total .rur{
+	font-size: 30px;
+		font-weight: 600;
+}
+.product-total .amount{
+	font-weight: 600;
+}
+.product-total .rur{
+	font-size: 30px;
+		font-weight: 600;
+}
+.what_img{
+	border-radius: 50%;
+	width: 43%;
+	margin-top: -50%;
+	float: left;
+}
+img.fir{
+	width: 100%;
+	float: left;
+	margin-left: -5%;
+	margin-top: -13%;
+}
+.woocommerce-error{
+	width: 80%;
+	margin-top: 10%;
+}
+/*.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button{
+	background-image: url(http://diploma/img/card.png);
+	background-repeat: no-repeat;
+}*/
+.opps{
+	background-image: url(http://diploma/img/404.png);
+	display: block;
+	width: 100%;
 }

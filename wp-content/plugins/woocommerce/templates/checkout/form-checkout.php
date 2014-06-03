@@ -1,4 +1,4 @@
-<?php
+<img class="fir" src="http://diploma/img/first.png"/><?php
 /**
  * Checkout Form
  *

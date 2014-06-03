@@ -6,7 +6,7 @@
 <div class="article" <?php post_class(); ?>>
     <?php if ( is_sticky() ) : ?><div class="post-title"><?php _e( 'Featured', 'simplestyle' ); ?></div><?php endif; ?>
 	
-	<div class="date"><?php the_date(); ?></div>
+	
 	
 	<?php the_content(); ?>
 	

@@ -309,7 +309,7 @@ class WC_Gateway_Paypal extends WC_Payment_Gateway {
 				// Billing Address info
 				'first_name'    => $order->billing_first_name,
 				'last_name'     => $order->billing_last_name,
-				'company'       => $order->billing_company,
+				'second_name'       => $order->billing_second_name,
 				'address1'      => $order->billing_address_1,
 				'address2'      => $order->billing_address_2,
 				'city'          => $order->billing_city,
@@ -330,7 +330,7 @@ class WC_Gateway_Paypal extends WC_Payment_Gateway {
 			// If we are sending shipping, send shipping address instead of billing
 			$paypal_args['first_name']		= $order->shipping_first_name;
 			$paypal_args['last_name']		= $order->shipping_last_name;
-			$paypal_args['company']			= $order->shipping_company;
+			$paypal_args['second_name']			= $order->shipping_second_name;
 			$paypal_args['address1']		= $order->shipping_address_1;
 			$paypal_args['address2']		= $order->shipping_address_2;
 			$paypal_args['city']			= $order->shipping_city;

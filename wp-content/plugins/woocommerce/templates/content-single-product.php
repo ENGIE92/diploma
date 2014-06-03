@@ -37,7 +37,30 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
+<?php
+/**
+ * Additional Information tab
+ * 
+ * @author        WooThemes
+ * @package       WooCommerce/Templates
+ * @version       2.0.0
+ */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	// Exit if accessed directly
+	exit;
+}
+
+global $product;
+
+$heading = apply_filters( 'woocommerce_product_additional_information_heading', __( 'Additional Information', 'woocommerce' ) );
+?>
+
+<?php if ( $heading ): ?>
+
+<?php endif; ?>
+
+<?php $product->list_attributes(); ?>
 	<div class="summary entry-summary">
 
 		<?php
@@ -57,6 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 	</div><!-- .summary -->
 
+
 	<?php
 		/**
 		 * woocommerce_after_single_product_summary hook
@@ -66,6 +90,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		 */
 		do_action( 'woocommerce_after_single_product_summary' );
 	?>
+
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 

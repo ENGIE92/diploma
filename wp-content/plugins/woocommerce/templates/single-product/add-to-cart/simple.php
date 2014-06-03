@@ -37,9 +37,9 @@ if ( ! $product->is_purchasable() ) return;
 	 			) );
 	 	?>
 
-	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+	 	<input type="hidden" name="" value="<?php echo esc_attr( $product->id ); ?>" />
 
-	 	<button type="submit" class="single_add_to_cart_button button alt"><?php echo $product->single_add_to_cart_text(); ?></button>
+	 	<button type="text" class="single_add_to_cart_button button alt"><?php echo $product->single_add_to_cart_text(); ?>></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
@@ -47,3 +47,21 @@ if ( ! $product->is_purchasable() ) return;
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 
 <?php endif; ?>
+<?php
+/**
+ * Single product short description
+ *
+ * @author 		WooThemes
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
+ */
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+global $post;
+
+if ( ! $post->post_excerpt ) return;
+?>
+<div itemprop="description" class="good_description">
+	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
+</div>

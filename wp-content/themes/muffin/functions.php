@@ -200,3 +200,48 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 3
 <?php
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 ); ?>
 <?php remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0); ?> 
+<?php add_action( 'woocommerce_after_shop_loop_item_title', 'cj_show_dimensions', 9 );
+ 
+function cj_show_dimensions() {
+global $product;
+$dimensions = $product->get_dimensions();
+ 
+if ( ! empty( $dimensions )) {
+// echo '<span class="dimensions">' . $dimensions . '</span>';
+}
+} ?>
+
+<?php add_action( 'woocommerce_after_shop_loop_item_title', 'cj_show_weight', 9 );
+ 
+function cj_show_weight() {
+global $product;
+$weight = $product->get_weight();
+ 
+if ( ! empty( $weight ) ) {
+// echo '<span class="weight">' . $weight . '</span>';
+}
+} ?>
+<?php
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+ 
+function woo_remove_product_tabs( $tabs ) {
+ 
+unset( $tabs['description'] ); // Remove the description tab
+unset( $tabs['additional_information'] ); // Remove the additional information tab
+ 
+return $tabs;
+ 
+}?>
+
+<?php
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+function custom_override_checkout_fields( $fields ) {
+unset($fields['billing']['billing_address_2']);
+unset($fields['billing']['billing_company']);
+unset($fields['billing']['billing_city']);
+
+return $fields;
+}?>
+
+
