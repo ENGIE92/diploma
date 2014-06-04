@@ -32,9 +32,9 @@ p.gogo {
 }
 </style>
 <div class="opps">
-	<img class="omg" src="http://diploma/img/404.png"/>
+	<img class="omg" src="/img/404.png"/>
 	<h1 class="aww">Страница не найдена</h1>
-<p class="gogo"><a href="http://diploma/">Вернуться на главную страницу</a></p> 
+<p class="gogo"><a href="/">Вернуться на главную страницу</a></p> 
 
 	
 	

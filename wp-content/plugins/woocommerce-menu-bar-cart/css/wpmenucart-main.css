@@ -9,11 +9,8 @@
 	float: right !important;
 }
 .wpmenucart-display-left {
-	float: left !important;
-	top: 12%;
-	position: absolute;
 	list-style: none;
-	left: 18%;
+
 }
 .wpmenucart-display-left span{
 	font-family: GENISO;

@@ -126,7 +126,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 <?php do_action( 'woocommerce_after_cart_table' ); ?>
 
 </form>
-<a class="back_store" href="http://diploma/"> Вернуться в магазин </a>
+<a class="back_store" href="/"> Вернуться в магазин </a>
 <div class="cart-collaterals">
 
 	<?php do_action( 'woocommerce_cart_collaterals' ); ?>

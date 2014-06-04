@@ -1,4 +1,4 @@
-<img class="fir" src="http://diploma/img/second.png"/>
+<img class="fir" src="/img/second.png"/>
 <?php
 /**
  * Thankyou page

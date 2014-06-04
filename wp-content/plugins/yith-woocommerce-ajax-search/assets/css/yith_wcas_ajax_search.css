@@ -32,13 +32,24 @@ input#yith-s{
     border-color: #FFCAC5;
     border-style:solid;
     font-family: GENISO;
-    font-size: 18px;
+    font-size: 14px;
+    vertical-align:top;
 
 }
 input#yith-searchsubmit{
-    position: absolute;
-    top:23px;
+
+    margin-top:0;
+
+
 }
 textarea:focus, input:focus{
     outline: 0;
+}
+.yith-ajaxsearchform-container{
+    margin-top: 1.5%;
+    float: left;
+}
+.searchform{
+    margin-left: 0;
+    padding: 0;
 }
